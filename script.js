@@ -1,4 +1,4 @@
-// Mobile Navigation Toggle
+
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -7,7 +7,7 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Close mobile menu when clicking on a link
+
 document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
@@ -144,7 +144,7 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
-// Elimino el bloque que maneja el submit del formulario de contacto para permitir el envío normal a Formspree.
+
 
 // Typing animation for hero title
 function typeWriter(element, text, speed = 100) {
@@ -314,7 +314,7 @@ const cvBtn = document.querySelector('.cv-btn');
 if (cvBtn) {
     cvBtn.addEventListener('click', () => {
         // URL del archivo PDF
-        const pdfUrl = 'Diseño sin título.pdf.pdf'; // Cambia esto a la ruta correcta de tu archivo PDF
+        const pdfUrl = 'CV/Diseño sin título.pdf.pdf'; // Cambia esto a la ruta correcta de tu archivo PDF
         const link = document.createElement('a');
         link.href = pdfUrl;
         link.download = 'Cristopher_llerena_CV.pdf'; // Nombre del archivo que se descargará
